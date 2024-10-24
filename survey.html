@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Опитування про звички сну. Дізнайтеся, як поліпшити якість вашого сну з Morf.">
+    <title>Опитування про звички сну — Morf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="Логотип Morf" class="logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> Новини</a></li>
+                    <li><a href="survey.html"><i class="fas fa-poll"></i> Опитування</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="survey-section">
+        <div class="container">
+            <form class="survey-form">
+                <label for="login">
+                    <i class="fas fa-user"></i> Логін:
+                </label>
+                <input type="text" id="login" name="login" required>
+                
+                <label for="email">
+                    <i class="fas fa-envelope"></i> Електронна пошта:
+                </label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="sleepHours">Скільки годин ви спите щодня?</label>
+                <input type="number" id="sleepHours" name="sleepHours" required>
+                
+                <label for="sleepQuality">Як ви оцінюєте якість свого сну?</label>
+                <select id="sleepQuality" name="sleepQuality" required>
+                    <option value="excellent">Відмінно</option>
+                    <option value="good">Добре</option>
+                    <option value="average">Середньо</option>
+                    <option value="poor">Погано</option>
+                </select>
+                
+                <label>Чи маєте ви проблеми зі сном?</label>
+                <div class="center-radio">
+                    <label for="sleepProblemsYes">Так</label>
+                    <input type="radio" id="sleepProblemsYes" name="sleepProblems" value="yes" required>
+                    
+                    <label for="sleepProblemsNo">Ні</label>
+                    <input type="radio" id="sleepProblemsNo" name="sleepProblems" value="no" required>
+                </div>
+                
+                <button type="submit" class="btn-submit">Надіслати</button>
+                <button type="button" class="btn-reset" type="reset">Очистити</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Morf — Все для здорового сну</p>
+    </footer>
+</body>
+</html>
